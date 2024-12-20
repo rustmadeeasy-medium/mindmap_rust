@@ -430,7 +430,7 @@ function __wbg_get_imports() {
         wasm.__wbindgen_free(arg0, arg1 * 4, 4);
         console.warn(...v0);
     };
-    imports.wbg.__wbindgen_closure_wrapper1364 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper1348 = function(arg0, arg1, arg2) {
         const ret = makeClosure(arg0, arg1, 96, __wbg_adapter_20);
         return ret;
     };

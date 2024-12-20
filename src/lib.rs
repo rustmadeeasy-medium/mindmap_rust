@@ -4,17 +4,23 @@ use yew::prelude::*;
 pub fn app() -> Html {
     html! {
         <div> 
-            <div class="var-container">
-                <p> {"Variables"} </p>
+            <div>           
+                <p style = "color : red"> {"Variables"} </p>
             </div>
-            <div class = "var-content"> 
+            
+            <div 
+                style = 
+                    "display : flex;
+                    flex-direction : row;"
+            > 
                 <p> {"let"} </p> 
                 <div class = "ref"> {"Reference"} </div>
                 <div class = "mut"> {"Mutability"} </div>
                 <div class = "type"> {"Type"} </div>
+                <p> {"="} </p>
+                <p> {"value"} </p>
             </div>
-            <p> {"="} </p>
-            <p> {"value"} </p>
+            
         </div>
     }
 }
