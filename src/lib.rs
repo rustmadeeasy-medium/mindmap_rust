@@ -8,17 +8,13 @@ pub fn app() -> Html {
                 <p style = "color : red"> {"Variables"} </p>
             </div>
             
-            <div 
-                style = 
-                    "display : flex;
-                    flex-direction : row;"
-            > 
-                <p> {"let"} </p> 
-                <div class = "ref"> {"Reference"} </div>
-                <div class = "mut"> {"Mutability"} </div>
-                <div class = "type"> {"Type"} </div>
-                <p> {"="} </p>
-                <p> {"value"} </p>
+            <div class = "row"> 
+                <p class = "col-1"> {"let"} </p> 
+                <div class = "col-1"> {"Reference"} </div>
+                <div class = "col-1"> {"Mutability"} </div>
+                <div class = "col-1"> {"Type"} </div>
+                <p class = "col-1"> {"="} </p>
+                <p class = "col-1"> {"value"} </p>
             </div>
             
         </div>
