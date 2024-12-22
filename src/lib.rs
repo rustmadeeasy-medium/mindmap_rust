@@ -2,6 +2,7 @@ use yew::prelude::*;
 mod components;
 
 use crate::components::item::Item;
+use crate::components::subitem::Subitem;
 
 
 #[function_component(App)]
@@ -10,17 +11,16 @@ pub fn app() -> Html {
         <div> 
     
             <Item text = "Basics" color = "bg-dark"/>
-
             <Item text = "Variables" color = "bg-dark"/>
 
             
-            <div class = "row no-gutters"> 
-                <p class = "col-1"> {"let"} </p> 
-                <div class = "col-1"> {"Reference"} </div>
-                <div class = "col-1"> {"Mutability"} </div>
-                <div class = "col-1"> {"Type"} </div>
-                <p class = "col-1"> {"="} </p>
-                <p class = "col-1"> {"value"} </p>
+            <div class = "row no-gutters" style = "margin : auto; align-items : center; justify-content : center"> 
+                <Subitem text = "let" color = "bg-secondary"/>
+                <Subitem text = "Reference" color = "bg-secondary"/>
+                <Subitem text = "Mutability" color = "bg-secondary"/>
+                <Subitem text = "Type" color = "bg-secondary"/>
+                <Subitem text = "=" color = "bg-secondary"/>
+                <Subitem text = "value" color = "bg-secondary"/>
             </div>
             
         </div>
