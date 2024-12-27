@@ -11,7 +11,7 @@ pub struct Props {
 pub fn line(props : &Props) -> Html {
     html! {
         <div 
-            style = {format!("border : 1px solid black; width: 1px; height : 40px ;, margin-left : {}; margin-top : {}", props.margin_left.clone(), props.margin_top.clone())}>           
+            style = {format!("border : 1px solid black; width: 1px; height : 40px ; margin-left : {}; margin-top : {}", props.margin_left.clone(), props.margin_top.clone())}>           
         </div>
     }
 }
