@@ -27,7 +27,13 @@ pub fn app() -> Html {
             
             </div>
 
-            <Line margin_left = "773px" margin_top = "0px" />
+            <div style = "display : flex;"> 
+                <Line margin_left = "773px" margin_top = "0px" />
+                <Line margin_left = "75px" margin_top = "0px" />
+                <Line margin_left = "219px" margin_top = "0px" />
+            </div>
+           
+
 
             <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
                 <Textitem text = "let"/>
