@@ -13,14 +13,14 @@ pub fn app() -> Html {
         <div style = "margin-top : 20px;"> 
             
             <div style = "display : flex; flex-direction : column; justify-content : center; align-items : center;">
-                <Item text = "Basics" color = "bg-dark"/>
+                <Item text = "Basics"/>
                 <Line margin_left = "0px" margin_top = "0px" />
                 
                 <div style="display: flex; align-items: center; justify-content: center; text-align: center; gap: 10px;">
                     <div style="background-color: black; width: 300px; height: 2px; margin-right : 75px;"></div>
 
                     <div style="display : flex; position : absolute;"> 
-                        <Item text="Variables" color="bg-dark" />
+                        <Item text="Variables"/>
                     </div>
                 
                 </div> 
@@ -31,10 +31,10 @@ pub fn app() -> Html {
 
             <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
                 <Textitem text = "let"/>
-                <Subitem text="Reference" color="bg-secondary" />
-                <Subitem text="Mutability" color="bg-secondary" />
+                <Subitem text="Reference" />
+                <Subitem text="Mutability" />
                 <Textitem text = ":"/>
-                <Subitem text="Type" color="bg-secondary" />
+                <Subitem text="Type" />
                 <Textitem text = "="/>
                 <Textitem text = "value"/>
             </div>

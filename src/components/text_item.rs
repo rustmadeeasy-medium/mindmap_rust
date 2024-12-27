@@ -10,7 +10,7 @@ pub struct Props {
 pub fn textitem(props : &Props) -> Html {
     html! {
         <div 
-            style = "color : grey; width: 100px; margin-right : 5px; height : 25px;"  
+            style = "font-weight : bold; color : #b50202; width: 100px; margin-right : 5px; height : 25px;"  
             class="text-center"
         >           
                 <p class = "text-center"> {props.text.clone()} </p>
