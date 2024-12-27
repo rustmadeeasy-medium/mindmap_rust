@@ -11,10 +11,10 @@ pub struct Props {
 pub fn item(props : &Props) -> Html {
     html! {
         <div 
-            style = "width: 100px; margin : auto; margin-top : 20px;"  
-            class={format!("text-white text-center {}", props.color.clone())}
+            style = "width: 100px;"  
+            class={format!("{}", props.color.clone())}
         >           
-                <p class = "text-center"> {props.text.clone()} </p>
+                <p style = "text-align : center; color : white;"> {props.text.clone()} </p>
         </div>
     }
 }
