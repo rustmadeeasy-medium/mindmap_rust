@@ -10,7 +10,8 @@ use crate::components::line::Line;
 #[function_component(App)]
 pub fn app() -> Html {
     html! {
-        <div> 
+        <div style = "margin-top : 20px;"> 
+            
             <div style = "display : flex; flex-direction : column; justify-content : center; align-items : center;">
                 <Item text = "Basics" color = "bg-dark"/>
                 <Line margin_left = "0px" margin_top = "0px" />
@@ -21,12 +22,13 @@ pub fn app() -> Html {
                     <div style="display : flex; position : absolute;"> 
                         <Item text="Variables" color="bg-dark" />
                     </div>
+                
                 </div> 
+            
             </div>
 
             <Line margin_left = "773px" margin_top = "0px" />
 
-            
             <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
                 <Textitem text = "let"/>
                 <Subitem text="Reference" color="bg-secondary" />
@@ -36,6 +38,7 @@ pub fn app() -> Html {
                 <Textitem text = "="/>
                 <Textitem text = "value"/>
             </div>
+
         </div>
     }
 }
