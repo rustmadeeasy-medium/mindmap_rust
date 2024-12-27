@@ -11,7 +11,7 @@ pub struct Props {
 pub fn subitem(props : &Props) -> Html {
     html! {
         <div 
-            style = "width: 100px; margin-right : 5px; height : 25px;"  
+            style = "width: 100px; margin-right : 5px; height : 25px; border-radius : 5px;"  
             class={format!("text-white text-center {}", props.color.clone())}
         >           
                 <p class = "text-center"> {props.text.clone()} </p>

@@ -17,7 +17,7 @@ pub fn app() -> Html {
                 <Line margin_left = "0px" margin_top = "0px" />
                 
                 <div style="display: flex; align-items: center; justify-content: center; text-align: center; gap: 10px;">
-                    <div style="background-color: black; width: 300px; height: 1px; margin-right : 75px;"></div>
+                    <div style="background-color: black; width: 300px; height: 2px; margin-right : 75px;"></div>
 
                     <div style="display : flex; position : absolute;"> 
                         <Item text="Variables" color="bg-dark" />
