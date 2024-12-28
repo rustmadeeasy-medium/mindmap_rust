@@ -43,8 +43,8 @@ pub fn app() -> Html {
                 <Textitem text = "value"/>
             </div>
 
-            <div style="display: flex; flex-direction: column; margin-left : 980px; margin-top : -40px;">
-                <Item height="40px" width="175px" text="Compound Types" />
+            <div style="display: flex; flex-direction: column; margin-left : 990px; margin-top : -40px;">
+                <Item height="40px" width="160px" text="Custom Types" />
                 <Line margin_left = "5px" margin_top = "0px" height = "80px"/>
                 
                 <div style = "display : flex"> 
@@ -53,9 +53,10 @@ pub fn app() -> Html {
                         <Subitem text="struct" />
                     </div>
                 </div>
-
+            
             </div>
 
         </div>
+    
     }
 }
