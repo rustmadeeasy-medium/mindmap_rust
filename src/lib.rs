@@ -13,14 +13,14 @@ pub fn app() -> Html {
         <div style = "margin-top : 20px;"> 
             
             <div style = "display : flex; flex-direction : column; justify-content : center; align-items : center;">
-                <Item text = "Basics"/>
+                <Item height = "40px" width = "100px" text = "Basics"/>
                 <Line margin_left = "0px" margin_top = "0px" height = "40px"/>
                 
                 <div style="display: flex; align-items: center; justify-content: center; text-align: center; gap: 10px;">
                     <div style="background-color: black; width: 300px; height: 2px; margin-right : 75px;"></div>
 
                     <div style="display : flex; position : absolute;"> 
-                        <Item text="Variables"/>
+                        <Item height = "40px" width = "100px" text="Variables"/>
                     </div>
                 
                 </div> 
@@ -43,7 +43,9 @@ pub fn app() -> Html {
                 <Textitem text = "value"/>
             </div>
 
-            <Item text="Compound Styles"/>
+            <div style="display: flex; flex-direction: column; margin-left : 980px;">
+                <Item height="40px" width="175px" text="Compound Styles" />
+            </div>
 
         </div>
     }
