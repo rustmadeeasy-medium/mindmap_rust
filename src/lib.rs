@@ -44,7 +44,7 @@ pub fn app() -> Html {
             </div>
 
             <div style="display: flex; flex-direction: column; margin-left : 980px;">
-                <Item height="40px" width="175px" text="Compound Styles" />
+                <Item height="40px" width="175px" text="Compound Types" />
             </div>
 
         </div>
