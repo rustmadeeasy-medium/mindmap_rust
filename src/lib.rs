@@ -30,10 +30,10 @@ pub fn app() -> Html {
             <div style = "display : flex;"> 
                 <Line margin_left = "773px" margin_top = "0px" height = "40px"/>
                 <Line margin_left = "75px" margin_top = "0px" height = "40px"/>
-                <Line margin_left = "219px" margin_top = "0px" height = "150px"/>
+                <Line margin_left = "219px" margin_top = "0px" height = "180px"/>
             </div>
 
-            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; position : absolute; margin-top : -110px; margin-left : 600px;">
+            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center; position : absolute; margin-top : -150px; margin-left : 600px;">
                 <Textitem text = "let"/>
                 <Subitem text="Reference" />
                 <Subitem text="Mutability" />
@@ -43,8 +43,17 @@ pub fn app() -> Html {
                 <Textitem text = "value"/>
             </div>
 
-            <div style="display: flex; flex-direction: column; margin-left : 980px;">
+            <div style="display: flex; flex-direction: column; margin-left : 980px; margin-top : -40px;">
                 <Item height="40px" width="175px" text="Compound Types" />
+                <Line margin_left = "5px" margin_top = "0px" height = "80px"/>
+                
+                <div style = "display : flex"> 
+                    <div style="background-color: black; width: 40px; height: 2px; margin-left : 5px; margin-top : -45px"></div>
+                    <div style = "display : flex; flex-direction: column; margin-top : -60px;">
+                        <Subitem text="struct" />
+                    </div>
+                </div>
+
             </div>
 
         </div>
