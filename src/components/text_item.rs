@@ -3,17 +3,25 @@ use yew::virtual_dom::AttrValue;
 
 #[derive(Properties, PartialEq)]
 pub struct Props {
-    pub text : AttrValue,
+    pub text: AttrValue,
 }
 
 #[function_component(Textitem)]
-pub fn textitem(props : &Props) -> Html {
+pub fn textitem(props: &Props) -> Html {
     html! {
-        <div 
-            style = "font-weight : bold; color : #b50202; width: 100px; margin-right : 5px; height : 25px;"  
+        <div
+            style={format!(
+                "
+                    font-weight: bold;
+                    color: #b50202;
+                    width: 100px;
+                    margin-right: 5px;
+                    height: 25px;
+                "
+            )}
             class="text-center"
-        >           
-                <p class = "text-center"> {props.text.clone()} </p>
+        >
+            <p class="text-center"> {props.text.clone()} </p>
         </div>
     }
 }
