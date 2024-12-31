@@ -56,7 +56,6 @@ pub fn page(props: &PageProps) -> Html {
                     position: absolute;
                     top: 10px;
                     right: 10px;
-                    border: 1px solid black;
                     width: 40px;
                     height: 40px;
                     cursor: pointer;
@@ -64,6 +63,7 @@ pub fn page(props: &PageProps) -> Html {
                     justify-content: center;
                     align-items: center;
                     background-color: red;
+                    border-radius : 100%;
                 "
                 onclick={on_close}
             >
