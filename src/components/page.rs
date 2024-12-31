@@ -51,10 +51,11 @@ pub fn page(props: &PageProps) -> Html {
                 z-index: 9999;
             "
         >
-            <p>{ "Rewrite it in Rust!" }</p>
             <div
                 style="
-                    margin-top: 20px;
+                    position: absolute;
+                    top: 10px;
+                    right: 10px;
                     border: 1px solid black;
                     width: 40px;
                     height: 40px;
@@ -66,8 +67,9 @@ pub fn page(props: &PageProps) -> Html {
                 "
                 onclick={on_close}
             >
-                <p style="margin: 0; color: white;">{ "X" }</p>
+                <p style="margin: 0; color: white; font-weight : bold;">{ "x" }</p>
             </div>
+            <p>{ "Rewrite it in Rust!" }</p>
         </div>
     }
 }
