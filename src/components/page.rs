@@ -67,7 +67,7 @@ pub fn page(props: &PageProps) -> Html {
                 "
                 onclick={on_close}
             >
-                <p style="margin: 0; color: white; font-weight : bold;">{ "x" }</p>
+                <p style="cursor : pointer; margin: 0; color: white; font-weight : bold;">{ "x" }</p>
             </div>
             <p>{ "Rewrite it in Rust!" }</p>
         </div>
