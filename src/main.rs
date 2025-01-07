@@ -95,7 +95,7 @@ pub fn app() -> Html {
                 "
             >
                 <Item height="40px" width="160px" text="Custom Types" />
-                <Line margin_left="5px" margin_top="0px" height="80px" />
+                <Line margin_left="5px" margin_top="0px" height="100px" />
                 
                 <div
                     style="
@@ -108,17 +108,30 @@ pub fn app() -> Html {
                             width: 40px;
                             height: 2px;
                             margin-left: 5px;
-                            margin-top: -45px;
+                            margin-top: -60px;
                         "
                     ></div>
+
+                    <div
+                        style="
+                            background-color: black;
+                            width: 40px;
+                            height: 2px;
+                            margin-left : -40px;
+                        "
+                    ></div>
+                    
                     <div
                         style="
                             display: flex;
                             flex-direction: column;
-                            margin-top: -60px;
+                            margin-top: -80px;
                         "
                     >
                         <ClickableItem height="40px" width="100px" text="struct" />
+                        <ClickableItem height="40px" width="100px" text="enum" />
+
+
                     </div>
                 </div>
             

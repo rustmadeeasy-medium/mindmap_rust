@@ -38,6 +38,7 @@ pub fn clickable_item(props: &Props) -> Html {
                      height: {}; \
                      width: {}; \
                      background-color: #820303; \
+                     margin-bottom : 20px; \
                      border: 2px solid black; \
                      cursor: pointer;", // Added this line
                     props.height.clone(),
