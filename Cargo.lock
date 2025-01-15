@@ -686,6 +686,7 @@ version = "0.1.0"
 dependencies = [
  "stylist",
  "wasm-bindgen",
+ "wasm-bindgen-futures",
  "web-sys",
  "yew",
 ]
