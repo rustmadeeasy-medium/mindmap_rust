@@ -1,3 +1,10 @@
 pub mod subnode;
 pub mod page;
 pub mod ownership;
+pub mod shadowing;
+pub mod functions;
+pub mod cond_struct;
+pub mod match_stat;
+pub mod loop_stat;
+pub mod for_loop;
+pub mod while_loop;

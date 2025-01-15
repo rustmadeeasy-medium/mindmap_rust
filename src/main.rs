@@ -20,12 +20,14 @@ pub fn app() -> Html {
     ";
 
     let mindmap_style = "
-        display: flex;
-        flex-wrap: wrap;
-        gap: 20px;
-        justify-content: center;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns : repeat(5, 1fr);
+        grid-template-rows : masonry;
+        justify-items: center;
+        align-items : start;
         overflow-x: auto;
+        margin-left : 20px;
+        margin-right : 20px;
     ";
 
     let node_style = "
@@ -41,7 +43,7 @@ pub fn app() -> Html {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 20%;
+        width: 350px;
     ";
 
     html! {
@@ -56,6 +58,17 @@ pub fn app() -> Html {
                 <div class="node" style={node_style}>
                     <h3>{ "Memory Management" }</h3>
                     <Subnode text = "Ownership & Borrowing" page_to_display = "Ownership"/>
+                    <Subnode text = "Shadowing" page_to_display = "Shadowing"/>
+                </div>
+
+                <div class="node" style={node_style}>
+                    <h3>{ "Control Flow" }</h3>
+                    <Subnode text = "Functions" page_to_display = "Functions"/>
+                    <Subnode text = "if / else if / else" page_to_display = "If"/>
+                    <Subnode text = "match" page_to_display = "Match"/>
+                    <Subnode text = "loop" page_to_display = "Loop"/>
+                    <Subnode text = "for" page_to_display = "For"/>
+                    <Subnode text = "while" page_to_display = "While"/>
                 </div>
 
             </div>

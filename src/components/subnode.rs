@@ -2,6 +2,14 @@ use yew::prelude::*;
 
 // Import the Ownership component
 use crate::components::ownership::Ownership;
+use crate::components::shadowing::Shadowing;
+use crate::components::functions::Functions;
+use crate::components::cond_struct::CondStruct;
+use crate::components::match_stat::MatchStat;
+use crate::components::loop_stat::LoopStat;
+use crate::components::while_loop::WhileLoop;
+use crate::components::for_loop::ForLoop;
+
 
 // Default component if no match
 fn default_page() -> Html {
@@ -48,6 +56,13 @@ pub fn subnode(props: &Props) -> Html {
     // Use a match statement to choose the component to render
     let page_renderer = match props.page_to_display.as_str() {
         "Ownership" => html! { <Ownership on_close={handle_close.clone()} /> }, // Pass the on_close callback
+        "Shadowing" => html! { <Shadowing on_close={handle_close.clone()} /> },
+        "Functions" => html! { <Functions on_close={handle_close.clone()} /> },
+        "If" => html! { <CondStruct on_close={handle_close.clone()} /> },
+        "Match" => html! { <MatchStat on_close={handle_close.clone()} /> },
+        "Loop" => html! { <LoopStat on_close={handle_close.clone()} /> },
+        "For" => html! { <ForLoop on_close={handle_close.clone()} /> },
+        "While" => html! { <WhileLoop on_close={handle_close.clone()} /> },
         _ => default_page(),  // Default component
     };
 
