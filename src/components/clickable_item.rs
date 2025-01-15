@@ -6,8 +6,6 @@ use crate::components::page::*;
 #[derive(Properties, PartialEq)]
 pub struct Props {
     pub text: AttrValue,
-    pub height: AttrValue,
-    pub width: AttrValue,
 }
 
 #[function_component(ClickableItem)]
@@ -33,23 +31,21 @@ pub fn clickable_item(props: &Props) -> Html {
             <div
                 onclick={handle_click}
                 style={format!(
-                    "padding: auto 10px auto 10px; \
-                     border-radius: 5px; \
-                     height: {}; \
-                     width: {}; \
-                     background-color: #820303; \
-                     margin-bottom : 20px; \
-                     border: 2px solid black; \
-                     cursor: pointer;", // Added this line
-                    props.height.clone(),
-                    props.width.clone()
+                    "
+                        background-color: white;
+                        border: 1px solid rgb(45, 0, 0);
+                        border-radius: 6px;
+                        margin-top: 10px;
+                        padding-top : 10px;
+                        text-align: center;
+                        cursor: pointer;
+                        color: rgb(45, 0, 0);
+                        transition: background-color 0.3s ease, transform 0.3s ease;
+                        width: 80%;
+                    ", 
                 )}
             >
-                <p style="
-                    margin-top: 5px;
-                    text-align: center;
-                    color: white;
-                ">
+                <p>
                     {props.text.clone()}
                 </p>
             </div>
