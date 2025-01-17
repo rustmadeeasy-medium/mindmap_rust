@@ -26,7 +26,7 @@ pub struct Props {
 pub fn subnode(props: &Props) -> Html {
     let subnode_style = "
         background-color: white;
-        border: 1px solid rgb(45, 0, 0);
+        border: 2px solid rgb(45, 0, 0);
         border-radius: 6px;
         margin-top: 10px;
         padding: 10px;
@@ -35,6 +35,7 @@ pub fn subnode(props: &Props) -> Html {
         color: rgb(45, 0, 0);
         transition: background-color 0.3s ease, transform 0.3s ease;
         width: 80%;
+        font-weight : 500;
     ";
 
     let show_page = use_state(|| false);

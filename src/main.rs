@@ -8,7 +8,7 @@ use crate::components::subnode::Subnode;
 pub fn app() -> Html {
     let central_node_style = "
         background-color: rgb(132, 30, 1);
-        border: 1px solid rgb(45, 0, 0);
+        border: 2px solid rgb(45, 0, 0);
         color: white;
         font-size: 2rem;
         padding: 20px;
@@ -28,6 +28,7 @@ pub fn app() -> Html {
         overflow-x: auto;
         margin-left : 20px;
         margin-right : 20px;
+        gap : 20px;
     ";
 
     let node_style = "
@@ -35,19 +36,39 @@ pub fn app() -> Html {
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         padding: 20px;
-        margin: 10px 0;
         text-align: center;
         position: relative;
-        border: 1px solid rgb(45, 0, 0);
+        border: 2px solid rgb(45, 0, 0);
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         width: 350px;
     ";
 
+    let navbar_style = "
+        margin-top : 20px;
+        margin-left : auto;
+        margin-right : auto;
+        display : flex;
+        align-items  : center;
+        justify-content : center;
+    ";
+
+    let input_search_style = "
+        border-radius : 40px;
+        border : 2px solid rgb(73, 17, 1);
+        width : 600px;
+        height : 60px;
+        padding-left : 20px;
+    ";
+
     html! {
         <div>
+
+            <div style = {navbar_style}>
+                <input style = {input_search_style} type="text" placeholder="Search ..."/>
+            </div>
 
             <div style={central_node_style}>
                 <h2>{ "The Rust Mindmap" }</h2>
@@ -70,6 +91,23 @@ pub fn app() -> Html {
                     <Subnode text = "for" page_to_display = "For"/>
                     <Subnode text = "while" page_to_display = "While"/>
                 </div>
+            
+
+                <div class="node" style={node_style}> </div>
+
+                <div class="node" style={node_style}> </div>
+
+                <div class="node" style={node_style}> </div>
+
+                <div class="node" style={node_style}> </div>
+                
+                <div class="node" style={node_style}> </div>
+
+                <div class="node" style={node_style}> </div>
+
+
+
+
 
             </div>
         </div>

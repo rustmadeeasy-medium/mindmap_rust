@@ -1,6 +1,5 @@
 use yew::prelude::*;
 use std::collections::HashMap;
-
 // Props for the KeywordInput component
 #[derive(Properties, PartialEq)]
 pub struct KeywordInputProps {
