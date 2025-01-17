@@ -47,9 +47,7 @@ pub fn app() -> Html {
     ";
 
     let navbar_style = "
-        margin-top : 20px;
-        margin-left : auto;
-        margin-right : auto;
+        margin : 40px auto;
         display : flex;
         align-items  : center;
         justify-content : center;
@@ -66,12 +64,12 @@ pub fn app() -> Html {
     html! {
         <div>
 
-            <div style = {navbar_style}>
-                <input style = {input_search_style} type="text" placeholder="Search ..."/>
-            </div>
-
             <div style={central_node_style}>
                 <h2>{ "The Rust Mindmap" }</h2>
+            </div>
+
+            <div style = {navbar_style}>
+                <input style = {input_search_style} type="text" placeholder="Search ..."/>
             </div>
 
             <div style={mindmap_style}>
